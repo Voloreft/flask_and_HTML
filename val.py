@@ -2,7 +2,7 @@ from flask import Flask, url_for
 
 app = Flask(__name__)
 
-
+#  overflow: visible;
 @app.route('/')
 def intro():
     return 'Миссия Колонизация Марса'
@@ -38,6 +38,7 @@ def image():
                   <body>
                     <h1>Жди нас, Марс!</h1>
                     <img src="/static/flask/mars.jpg">
+                    <hr>Вот она какая, расная планета</hr>
                   </body>
                 </html>"""
 
