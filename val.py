@@ -1,6 +1,6 @@
-from flask import Flask, url_for
+from flask import Flask, url_for, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='static/pages')
 
 
 # overflow: visible;
@@ -43,6 +43,11 @@ def image():
                   </body>
                 </html>"""
 
+
+
+@app.route('/promotion_image')
+def promo_img():
+    return render_template('promotion_image.html')
 
 #
 
